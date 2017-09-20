@@ -1,0 +1,34 @@
+nav {
+  background: #0B032D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 100;
+  text-align: center;
+  padding: 15px;
+}
+
+.site-title {
+  padding: 15px 30px;
+  font-family: 'Mogra';
+  font-size: 1.5em;
+}
+
+.menu-list {
+  margin: 0;
+}
+
+.menu-list li {
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: 1em;
+  font-family: 'Asap';
+}
+
+.menu-list a {
+  color: white;
+  text-decoration: none;
+}
+

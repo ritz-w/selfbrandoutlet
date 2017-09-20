@@ -1,0 +1,24 @@
+.products-section {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.product-card {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.products-section a {
+  margin: 20px;
+  padding: 20px;
+  background: #aaf;
+}
+
+.product-image {
+  max-height: 300px;
+  margin: 2% 4%;
+}

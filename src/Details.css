@@ -1,0 +1,21 @@
+.detail{
+  text-align: center;
+  line-height: 0.8em;
+  padding: 2%;
+}
+
+.detail img {
+  margin: 10px;
+  width: 80%;
+  margin-top: 5%;
+  position: relative;
+  border: 1px solid black;
+}
+
+.detail p {
+  font-family: 'Asap';
+  width: 95%;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin-top: 5%;
+}
