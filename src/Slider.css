@@ -1,4 +1,8 @@
 .slider-box {
-  width: 90%;
-  height: 300px;
+  width: 100%;
+  margin: 5% 0%;
+}
+
+.slider-pic {
+  width: 100%;
 }

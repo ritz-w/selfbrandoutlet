@@ -5,17 +5,17 @@ import './ArtistSection.css'
 
 const artistsList = [
           {
-            profilePic: 'https://static01.nyt.com/images/2011/05/22/arts/ARCANGEL-4-SUB/ARCANGEL-4-SUB-popup.jpg',
+            profilePic: '/biopics/cory_arcangel.jpg',
             name: 'Cory Arcangel',
             description: 'Lorem Ipsum'
           },
           {
-            profilePic: 'https://www.lococofineart.com/wp-content/uploads/2016/03/arts-graphics-slid_1194386a.jpg',
+            profilePic: '/biopics/keith_haring.jpg',
             name: 'Keith Haring',
             description: 'Lorem Ipsum'
           },
           {
-            profilePic: 'https://pbs.twimg.com/profile_images/557492008659345409/m1INL_zM.jpeg',
+            profilePic: '/biopics/chim_pom.jpg',
             name: 'ChimPom',
             description: 'Lorem Ipsum'
           },

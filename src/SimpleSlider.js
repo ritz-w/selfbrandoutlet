@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './Slider.css'
 
+const sliderPics = [
+          {
+            PicUrl: '/featurepics/jeroen_van_loon.jpg'
+          },
+          {
+            PicUrl: '/featurepics/martynka.jpg'
+          }
+        ]
+
 export default class SimpleSlider extends React.Component {
   render () {
     var settings = {
@@ -12,13 +21,12 @@ export default class SimpleSlider extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <Slider {...settings} className="slider-box">
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
+      <Slider {...settings} className="slider-box">    
+        {sliderPics.map (one => (
+          <div>  
+            <img className="slider-pic" src={one.PicUrl} />
+          </div>
+        ))}
       </Slider>
     );
   }

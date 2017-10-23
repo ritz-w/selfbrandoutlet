@@ -1,0 +1,16 @@
+.product {
+  width: 100%;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9em;
+  font-family: Asap;
+}

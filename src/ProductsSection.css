@@ -2,23 +2,14 @@
   width: 100%;
 }
 
-.row {
+.products-section .row {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  padding: 3% 0%;
 }
 
-.product-card {
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-.products-section a {
-  margin: 20px;
-  padding: 20px;
-  background: #aaf;
-}
-
-.product-image {
-  max-height: 300px;
-  margin: 2% 4%;
+.products-section .row .product {
+  flex: 0 0 30%;
 }
