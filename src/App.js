@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './nav';
 import Main from './Main';
+import Footer from './Footer';
 import {
   BrowserRouter as Router,
   Route,
@@ -17,18 +18,19 @@ import ArtistsList from './ArtistsPage/list'
 class App extends Component {
   render() {
     return (
-    <Router>
-      <div className="App">
-        <Nav />
+      <Router>
+        <div className="App">
+          <Nav />
           <div>
-          <Route exact path="/about" component={AboutPage}/>
-          <Route exact path="/collections" component={CollectionsPage}/>
-          <Route exact path="/artists" list={ArtistsList} component={ArtistsPage}/>
-          <Route exact path="/artists/:id" list={ArtistsList} component={SingleArtistPage}/>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/about" component={AboutPage}/>
+            <Route exact path="/collections" component={CollectionsPage}/>
+            <Route exact path="/artists" list={ArtistsList} component={ArtistsPage}/>
+            <Route exact path="/artists/:id" list={ArtistsList} component={SingleArtistPage}/>
           </div>
-        <Main />
-      </div>
-    </Router> 
+          <Footer />
+        </div>
+      </Router> 
     );
   }
 }

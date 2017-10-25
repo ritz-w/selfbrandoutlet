@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
 import './Main.css'; 
 import ProductsSection from './ProductsSection.js'
-import Details from './Details.js'
-import Footer from './Footer.js'
 import ArtistSection from './ArtistSection.js'
-import SimpleSlider from './SimpleSlider.js'
+import SimpleSlider from './Slider.js'
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: [],
-      current: null,
-      rightOpen: null
-      } 
-    this.windowClosed = this.windowClosed.bind(this);
-    setTimeout(() => {
-      this.setState({
-        rightOpen: true,
-        products: [
+      products: [
           {
             id: 1,
             title: 'Arcangel Surfware',
@@ -41,33 +31,17 @@ export default class App extends Component {
             detailsDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet interdum egestas. Etiam scelerisque mauris ut faucibus eleifend. Ut suscipit aliquam ligula, non posuere erat imperdiet sit amet. Suspendisse placerat eleifend justo. Cras vel dolor non odio rhoncus sagittis. Ut pellentesque tortor at felis luctus, eu lacinia libero elementum. Pellentesque.'
           }
         ]
-      });
-    }, 1000);
-  }
-
-  windowClosed() {
-    this.setState(prevState => ({
-      rightOpen: false
-    }));
+      } 
   }
 
   render() {
-    const changeDetails = (id) => {
-      this.setState( {
-        current: this.state.products.find(one => one.id === id),
-        rightOpen: true
-      });
-    }
-
-
     return (
     <main>
-        <SimpleSlider className="top-section" />
-        <div className="bottom-section">
-        <ProductsSection products={this.state.products} changeDetails={changeDetails} />
+      <SimpleSlider className="top-section" />
+      <div className="bottom-section">
+        <ProductsSection products={this.state.products} />
         <ArtistSection />
-        </div>
-        <Footer />
+      </div>
     </main>
 
     )

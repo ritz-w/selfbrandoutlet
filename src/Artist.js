@@ -23,10 +23,4 @@ export default class Artist extends Component {
     </div>
   )}
 }
-// export default (props) => (
-//   <div>
-//     <img src={props.profilePic} />
-//     <br />
-//     <h2> {props.name} </h2>
-//   </div>
-//   )
+
