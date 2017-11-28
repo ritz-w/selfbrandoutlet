@@ -4,10 +4,14 @@ import './Slider.css'
 
 const sliderPics = [
           {
-            PicUrl: '/featurepics/jeroen_van_loon.jpg'
+            PicUrl: '/featurepics/jeroen_van_loon.jpg',
+            PicHeadline: "Jeroen Van Loon",
+            PicTagline: "The buyer of Cellout.me will own an extremely personal ‘self portrait’ and will become co-owner of the artist’s DNA."
           },
           {
-            PicUrl: '/featurepics/martynka.jpg'
+            PicUrl: '/featurepics/martynka.jpg',
+            PicHeadline: "Martynka Wawrzyniak",
+            PicTagline: "Body odor as olfactory portrait... "
           }
         ]
 
@@ -23,8 +27,9 @@ export default class SimpleSlider extends React.Component {
     return (
       <Slider {...settings} className="slider-box">    
         {sliderPics.map (one => (
-          <div>  
+          <div class="slider">  
             <img className="slider-pic" src={one.PicUrl} />
+            <h3 className="slider-headline">{one.PicHeadline}<br /><div className="tagline">"{one.PicTagline}"</div></h3>
           </div>
         ))}
       </Slider>

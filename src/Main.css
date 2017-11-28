@@ -147,3 +147,12 @@ p {
   font-size: 1.2em;
 }
 
+.footer {
+  margin: 0 45%;
+  padding: 30px;
+  width: 15%;
+  font-family: 'Asap';
+  font-weight: bold;
+  font-size: 15px;
+}
+

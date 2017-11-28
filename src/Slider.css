@@ -1,8 +1,39 @@
+@media only screen and (max-width: 700px) {
+  .slider-headline {
+    font-family: 'Asap';
+    font-size: 1em;
+    position: relative;
+    bottom: 200px;
+    background: yellow;
+    width: 30%;
+    left: 16px;
+  }
+}
+
 .slider-box {
   width: 100%;
   margin: 5% 0%;
+  position: relative;
+}
+
+.slick-slide {
+  height: 700px;
 }
 
 .slider-pic {
   width: 100%;
+}
+
+.slider-headline {
+  font-family: 'Asap';
+  font-size: 2em;
+  position: relative;
+  bottom: 200px;
+  background: yellow;
+  width: 30%;
+  left: 16px;
+}
+
+.tagline {
+  font-size: .5em;
 }
