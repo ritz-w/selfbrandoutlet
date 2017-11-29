@@ -27,9 +27,11 @@ export default class SimpleSlider extends React.Component {
     return (
       <Slider {...settings} className="slider-box">    
         {sliderPics.map (one => (
-          <div class="slider">  
+          <div>
+            <div className="slider-content">  
             <img className="slider-pic" src={one.PicUrl} />
             <h3 className="slider-headline">{one.PicHeadline}<br /><div className="tagline">"{one.PicTagline}"</div></h3>
+            </div>
           </div>
         ))}
       </Slider>

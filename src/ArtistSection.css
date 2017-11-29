@@ -5,3 +5,9 @@
 .row {
   display: flex;
 }
+
+@media (max-width: 700px) {
+  .row {
+    display: inline;
+  }
+}

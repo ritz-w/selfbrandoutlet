@@ -1,34 +1,145 @@
-nav {
-  background: #0B032D;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: white;
-  z-index: 100;
-  text-align: center;
-  padding: 15px;
-}
 
 .site-title {
   padding: 15px 30px;
   font-family: 'Mogra';
   font-size: 2em;
-}
-
-.menu-list {
-  margin: 0;
-}
-
-.menu-list li {
-  display: inline-block;
-  padding: 5px 30px;
-  font-size: 1em;
-  font-family: 'Asap';
-}
-
-.menu-list a {
+  margin-bottom: 1em;
   color: white;
-  text-decoration: none;
 }
+#nav
+{
+    /* container */
+  background: #0B032D;
+}
+    #nav > a
+    {
+        display: none;
+    }
+    #nav li
+    {
+        position: relative;
+    }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: 3.75em;
+        padding: 0 2em;
+        margin: 0 auto;
+    }
+        #nav > ul > li
+        {
+            width: 25%;
+            margin-top: 3;
+            height: 100%;
+            float: left;
+            font-family: 'Asap';
+            text-align: center;
+            padding: 1em;
+            border: 2px solid black;
+            background-color: lightcoral;
+        }
+        #nav > ul > li > a {
+            color: black;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+        margin: 0 auto;
+    }
+        #nav li:hover ul
+        {
+            display: block;
+            z-index: 100;
+            background-color: lightcoral;
+            width: 100%;
+            left: 0;
+            padding: 0px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #nav li:hover ul li {
+            margin: 1em;
+        }
 
+        #nav li:hover ul a {
+            color: black;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+
+
+@media only screen and ( max-width: 40em ) /* 640 */
+{
+
+.site-title {
+  padding: 20px;
+  font-family: 'Mogra';
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+    #nav
+    {
+        position: relative;
+    }
+        #nav > a {
+            background-color: lightcoral;
+            padding: 1.3em;
+            text-align: center;
+            font-family: 'Asap';
+            text-align: center;
+            font-size: 1.2em;
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+        }
+        #nav:not( :target ) > a:first-of-type,
+        #nav:target > a:last-of-type
+        {
+            display: block;
+        }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: auto;
+        z-index: 100;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border: 2px solid black;
+    }
+        #nav:target > ul
+        {
+            display: block;
+            border: none;
+        }
+        #nav > ul > li
+        {
+            width: 100%;
+            float: none;
+        }
+
+    /* second level */
+ 
+    #nav li ul a
+    {
+        position: static;
+        font-size: 1em;
+        border: 0px;
+
+    }
+}

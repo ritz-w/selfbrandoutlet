@@ -1,19 +1,34 @@
-  import React, { Component } from 'react';
+import React, { Component } from 'react';
 import './nav.css';
 import {
   Link
 } from 'react-router-dom'
 
 export default (props) => (
-  <nav>
+<nav id="nav" role="navigation">
     <div className="site-title">Self Brand Outlet</div>
-    <div className="menu-section">
-      <ul className="menu-list">
-        <li><Link to= "/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/collections"><a>Collections</a></Link></li>
-        <li><Link to="/artists"><a>Artists</a></Link></li>
-      </ul>
-    </div>
-  </nav>
+    <a href="#nav" title="Show navigation">Show Navigation</a>
+    <a href="#" title="Hide navigation">Hide Navigation</a>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li>
+            <a href="/" aria-haspopup="true">Artists ⬇</a>
+            <ul>
+                <li><a href="/">Design</a></li>
+                <li><a href="/">HTML</a></li>
+                <li><a href="/">CSS</a></li>
+                <li><a href="/">JavaScript</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/" aria-haspopup="true">Collections ⬇</a>
+            <ul>
+                <li><a href="/">Web Design</a></li>
+                <li><a href="/">Typography</a></li>
+                <li><a href="/">Front-End</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 );
