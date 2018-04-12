@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './Footer.css';
+
   export default () => (
-    <div className="footer">Ritz Wu<br/> © 2017</div>
+    <div className="footer">Ritz Wu © 2017</div>
     )

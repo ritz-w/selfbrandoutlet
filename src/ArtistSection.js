@@ -7,17 +7,17 @@ const artistsList = [
           {
             profilePic: '/biopics/cory_arcangel.jpg',
             name: 'Cory Arcangel',
-            description: 'Lorem Ipsum'
+            description: 'A man with a plan.'
           },
           {
             profilePic: '/biopics/keith_haring.jpg',
             name: 'Keith Haring',
-            description: 'Lorem Ipsum'
+            description: 'Famous for dancing graffiti men.'
           },
           {
             profilePic: '/biopics/chim_pom.jpg',
             name: 'ChimPom',
-            description: 'Lorem Ipsum'
+            description: 'OMG OMG OMG.'
           },
         ]
 
