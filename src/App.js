@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Nav from './nav';
 import Main from './Main';
 import Footer from './Footer';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 import AboutPage from './AboutPage'
 import CollectionsPage from './CollectionsPage'

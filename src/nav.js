@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './nav.css';
 import {
-  Link
 } from 'react-router-dom'
 
 export default (props) => (
